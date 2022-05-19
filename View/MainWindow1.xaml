@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sanator.View"
         mc:Ignorable="d"
-         Title="Гостиница" Height="384.065" Width="552.216" WindowStartupLocation="CenterScreen">
+         Title="Санаторий" Height="384.065" Width="552.216" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <Style x:Key="{x:Type Button}">
             <Setter Property="Control.FontSize" Value="18"></Setter>
@@ -26,7 +26,8 @@
         </Grid.Background>
         <Button x:Name="Ficha1" Content="" Width="43" Height="6" Click="Ficha"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"  BorderBrush="Transparent"  Background="Transparent" RenderTransformOrigin="-0.107,1.426"/>
         <Button x:Name="Ficha12" Content="" Width="43" Height="8" Click="Ficha2"  HorizontalAlignment="Left" Margin="10,29,0,0" VerticalAlignment="Top"  BorderBrush="Transparent"  Background="Transparent" RenderTransformOrigin="-0.107,1.426"/>
-        <Button Click="OpenClientView" Content="Клиенты" HorizontalAlignment="Left" Margin="178,112,0,0" VerticalAlignment="Top" Width="202" Height="41" BorderBrush="#FF040944" Background="#D870B4DB" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <Button Click="OpenClientView" Content="Клиенты" HorizontalAlignment="Left" Margin="34,95,0,0" VerticalAlignment="Top" Width="202" Height="41" BorderBrush="#FF040944" Background="#D870B4DB" Grid.Row="1"/>
+        <Button Click="OpenWorkerView" Content="Сотрудники" HorizontalAlignment="Left" Margin="30,95,0,0" VerticalAlignment="Top" Width="202" Height="41" BorderBrush="#FF040944" Background="#D870B4DB" Grid.Row="1" Grid.Column="1"/>
         <Button Click="OpenReserveView" Content="Забронировать номер" HorizontalAlignment="Left" Margin="34,146,0,0" VerticalAlignment="Top"  Width="202" RenderTransformOrigin="0.111,1.646" Height="41" BorderBrush="#FF000342" Background="#D870B4DB" Grid.RowSpan="2"/>
         <Button Click="OpenUchetView" Content="Проживание" HorizontalAlignment="Left" Margin="34,82,0,0" VerticalAlignment="Top" Width="202" Height="41" Background="#D870B4DB" Foreground="Black" BorderBrush="#FF040944"/>
         <Button Click="OpenServiceView" Content="Услуги" HorizontalAlignment="Left" Margin="30.178,29,0,0" VerticalAlignment="Top" Width="202" Height="41" BorderBrush="#FF040944" Background="#D870B4DB" Grid.Row="1" Grid.Column="1"/>
@@ -50,7 +51,7 @@
             </Button.Template>
         </Button>
         <Button Click="OpenNumbersView" Content="Номера" HorizontalAlignment="Left" Margin="30.178,82,0,0" VerticalAlignment="Top" Width="202" BorderBrush="#FF040944" Height="41" Background="#D870B4DB" Grid.Column="1"/>
-        <Label Content="Гостиница" HorizontalAlignment="Left" Margin="218,10,0,0" VerticalAlignment="Top" Width="143" FontFamily="Wide Latin" FontSize="24" FontWeight="Bold" Height="35" Grid.ColumnSpan="2">
+        <Label Content="Санаторий" HorizontalAlignment="Left" Margin="218,10,0,0" VerticalAlignment="Top" Width="143" FontFamily="Wide Latin" FontSize="24" FontWeight="Bold" Height="35" Grid.ColumnSpan="2">
             <Label.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFD2D5EC"/>

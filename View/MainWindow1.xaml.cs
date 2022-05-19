@@ -84,5 +84,16 @@ namespace Sanator.View
         {
             Process.Start(new ProcessStartInfo("http://memesmix.net/media/created/fgdagz.jpg") { UseShellExecute = true });
         }
+
+        private void MyFrame_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)
+        {
+
+        }
+
+        private void OpenWorkerView(object sender, RoutedEventArgs e)
+        {
+            WorkerView d = new WorkerView();
+            d.Show();
+        }
     }
 }

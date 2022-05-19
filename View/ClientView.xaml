@@ -78,7 +78,7 @@
             </ListBox.ItemTemplate>
         </ListBox>
 
-        <Button Click="SaveClients"  HorizontalAlignment="Left" Margin="505,187,0,0" VerticalAlignment="Top " Width="118" Height="60" >
+        <Button Click="SaveClients"  HorizontalAlignment="Left" Margin="530,199,0,0" VerticalAlignment="Top " Width="112" Height="43" >
             <Button.Template>
                 <ControlTemplate>
                     <Grid Margin="70,0,0,0">
@@ -96,7 +96,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button  Command="{Binding RemoveClient}" HorizontalAlignment="Left" Margin="699,197,0,0" VerticalAlignment="Top" Width="37" Height="40" RenderTransformOrigin="9.285,-2.139">
+        <Button  Command="{Binding RemoveClient}" HorizontalAlignment="Left" Margin="684,197,0,0" VerticalAlignment="Top" Width="37" Height="40" RenderTransformOrigin="9.285,-2.139">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>

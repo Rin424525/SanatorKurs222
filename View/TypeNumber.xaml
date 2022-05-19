@@ -53,7 +53,7 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <StackPanel DataContext="{Binding SelectedKategory}" HorizontalAlignment="Left" Height="387" Margin="394,40,0,0" VerticalAlignment="Top" Width="388">
+        <StackPanel DataContext="{Binding SelectedKategory}" HorizontalAlignment="Left" Height="172" Margin="394,40,0,0" VerticalAlignment="Top" Width="388">
             <TextBlock Margin="0,2,10,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="368" Height="18" Text="Имя" Foreground="White"/>
             <TextBox Height="23" TextWrapping="Wrap" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" Margin="10,0"/>
             <TextBlock Text="Описание" Margin="0,2,10,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="368" Height="18" Foreground="White"/>
@@ -85,8 +85,6 @@
             <TextBox Height="23" TextWrapping="Wrap" Text="{Binding Capacity, UpdateSourceTrigger=PropertyChanged}" Margin="10,0"/>
             <TextBlock TextWrapping="Wrap" Text="Цена" Margin="10,0" HorizontalAlignment="Right" Width="368" Height="18" Foreground="White"/>
             <TextBox Height="23" TextWrapping="Wrap" Text="{Binding Cost, UpdateSourceTrigger=PropertyChanged}" Margin="10,0"/>
-            <TextBlock TextWrapping="Wrap" Text="Фото" Margin="10,0" HorizontalAlignment="Right" Width="368" Height="18" Foreground="White"/>
-            <Image Height="192" Margin="10,0" Source="{Binding Photo, UpdateSourceTrigger=PropertyChanged}"/>
 
         </StackPanel>
         <Button  Command="{Binding AddKategory}"  HorizontalAlignment="Left" Margin="24,472,0,0" Width="47" Height="31" VerticalAlignment="Top">
@@ -123,7 +121,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button Command="{Binding  SaveKategory}"  HorizontalAlignment="Left" Margin="596,432,0,0" VerticalAlignment="Top" Width="52" Height="35" RenderTransformOrigin="0.596,0.767">
+        <Button Command="{Binding  SaveKategory}"  HorizontalAlignment="Left" Margin="545,292,0,0" VerticalAlignment="Top" Width="72" Height="62" RenderTransformOrigin="0.596,0.767">
             <Button.Template>
                 <ControlTemplate>
                     <Grid>
@@ -141,29 +139,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button Command="{Binding  UploadPhoto}"  HorizontalAlignment="Left" Margin="514,432,0,0" VerticalAlignment="Top" Width="56" Height="35" RenderTransformOrigin="0.596,0.767">
-            <Button.ToolTip>
-                <ToolTip>
-                    Загрузить фото
-                </ToolTip>
-            </Button.ToolTip>
-            <Button.Template>
-                <ControlTemplate>
-                    <Grid>
-                        <Ellipse x:Name="ell" Margin="10,0,0,-9" />
-                        <Image  RenderTransformOrigin="0.321,0.5" Width="42" Margin="0,0,0,-9" Source="..\Images\file1.png" Height="Auto" HorizontalAlignment="Right" />
-                    </Grid>
-                    <ControlTemplate.Triggers>
-                        <Trigger Property="IsMouseOver" Value="true">
-                            <Setter Property="FontWeight" Value="Bold" />
-                            <Setter TargetName="ell" Property="Stroke" Value="White" />
-                            <Setter TargetName="ell" Property="Fill" Value="#FFA7CBFF" />
-                            <Setter TargetName="ell" Property="StrokeThickness" Value="4" />
-                        </Trigger>
-                    </ControlTemplate.Triggers>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
+
         <Label Content="Справочник типов номеров" HorizontalAlignment="Left" Margin="24,0,0,0" VerticalAlignment="Top" Width="393" FontFamily="Wide Latin" FontSize="24" FontWeight="Bold" Height="40">
             <Label.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
