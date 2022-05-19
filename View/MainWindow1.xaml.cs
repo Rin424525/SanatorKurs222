@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -73,6 +74,15 @@ namespace Sanator.View
         {
             Number d = new Number();
             d.Show();
+        }
+        private void Ficha(object sender, RoutedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo("https://github.com/Rin424525") { UseShellExecute = true });
+        }
+
+        private void Ficha2(object sender, RoutedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo("http://memesmix.net/media/created/fgdagz.jpg") { UseShellExecute = true });
         }
     }
 }
